@@ -1,0 +1,437 @@
+Request: 
+GET / HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /client$uploader.class>client$uploader.class</a></li>
+<li><a href = /client.class>client.class</a></li>
+<li><a href = /client.java>client.java</a></li>
+<li><b><i><a href = /files/>files</a></i></b></li>
+<li><a href = /log.txt>log.txt</a></li>
+<li><b><i><a href = /Media/>Media</a></i></b></li>
+<li><a href = /server$ClientHandler.class>server$ClientHandler.class</a></li>
+<li><a href = /server.class>server.class</a></li>
+<li><a href = /server.java>server.java</a></li>
+<li><b><i><a href = /uploaded/>uploaded</a></i></b></li>
+</ul>
+</body></html>
+
+Request: 
+GET /favicon.ico HTTP/1.1
+Response: 
+HTTP/1.0 404 Not Found
+Content-Type: text/html
+
+<!DOCTYPE html>
+<title>404 - Page Not Found</title></head>
+<body style="text-align:center;">
+<h1>404 - Page Not Found</h1>
+<p><a href="/">Go back to the homepage</a></p>
+</body></html>
+
+Page not found.
+Request: 
+GET /Media/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><b><i><a href = /Media/Audio/>Audio</a></i></b></li>
+<li><b><i><a href = /Media/Image/>Image</a></i></b></li>
+<li><b><i><a href = /Media/Text/>Text</a></i></b></li>
+<li><b><i><a href = /Media/Video/>Video</a></i></b></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Media/Image/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /Media/Image/a.jpg>a.jpg</a></li>
+<li><a href = /Media/Image/b.jpg>b.jpg</a></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Media/Image/a.jpg HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: image/jpeg
+Content-Length: 62833
+
+
+Request: 
+GET /Media/Text/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /Media/Text/abc.docx>abc.docx</a></li>
+<li><a href = /Media/Text/code.c>code.c</a></li>
+<li><a href = /Media/Text/university.txt>university.txt</a></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Media/Text/university.txt HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/plain
+Content-Length: 4
+
+
+Request: 
+GET /Media/Video/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /Media/Video/video.mkv>video.mkv</a></li>
+</ul>
+</body></html>
+
+Request: 
+GET / HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /client$uploader.class>client$uploader.class</a></li>
+<li><a href = /client.class>client.class</a></li>
+<li><a href = /client.java>client.java</a></li>
+<li><b><i><a href = /files/>files</a></i></b></li>
+<li><a href = /log.txt>log.txt</a></li>
+<li><b><i><a href = /Media/>Media</a></i></b></li>
+<li><a href = /server$ClientHandler.class>server$ClientHandler.class</a></li>
+<li><a href = /server.class>server.class</a></li>
+<li><a href = /server.java>server.java</a></li>
+<li><b><i><a href = /uploaded/>uploaded</a></i></b></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Media/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><b><i><a href = /Media/Audio/>Audio</a></i></b></li>
+<li><b><i><a href = /Media/Image/>Image</a></i></b></li>
+<li><b><i><a href = /Media/Text/>Text</a></i></b></li>
+<li><b><i><a href = /Media/Video/>Video</a></i></b></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Media/Video/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /Media/Video/video.mkv>video.mkv</a></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Media/Video/video.mkv HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: video/x-matroska
+Content-Length: 416184230
+Content-Disposition: attachment; filename="video.mkv"
+
+
+File downloaded successfully.
+Request: 
+GET /Media/Video/video.mkv HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: video/x-matroska
+Content-Length: 416184230
+Content-Disposition: attachment; filename="video.mkv"
+
+
+File downloaded successfully.
+Request: 
+GET /Media/Video/video.mkv HTTP/1.1
+Response: 
+Request: 
+GET /Media/Video/video.mkv HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: video/x-matroska
+Content-Length: 416184230
+Content-Disposition: attachment; filename="video.mkv"
+
+
+File downloaded successfully.
+HTTP/1.0 200 OK
+Content-Type: video/x-matroska
+Content-Length: 416184230
+Content-Disposition: attachment; filename="video.mkv"
+
+
+File downloaded successfully.
+Request: 
+GET /Media/Video/video.mkv HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: video/x-matroska
+Content-Length: 416184230
+Content-Disposition: attachment; filename="video.mkv"
+
+
+File downloaded successfully.
+Request: 
+GET /Media/Video/video.mkv HTTP/1.1
+Response: 
+Request: 
+GET /Media/Image/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /Media/Image/a.jpg>a.jpg</a></li>
+<li><a href = /Media/Image/b.jpg>b.jpg</a></li>
+</ul>
+</body></html>
+
+HTTP/1.0 200 OK
+Content-Type: video/x-matroska
+Content-Length: 416184230
+Content-Disposition: attachment; filename="video.mkv"
+
+
+File downloaded successfully.
+Request: 
+GET /Media/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><b><i><a href = /Media/Audio/>Audio</a></i></b></li>
+<li><b><i><a href = /Media/Image/>Image</a></i></b></li>
+<li><b><i><a href = /Media/Text/>Text</a></i></b></li>
+<li><b><i><a href = /Media/Video/>Video</a></i></b></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Medi HTTP/1.1
+Response: 
+HTTP/1.0 404 Not Found
+Content-Type: text/html
+
+<!DOCTYPE html>
+<title>404 - Page Not Found</title></head>
+<body style="text-align:center;">
+<h1>404 - Page Not Found</h1>
+<p><a href="/">Go back to the homepage</a></p>
+</body></html>
+
+Page not found.
+Request: 
+GET /Media/Text/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /Media/Text/abc.docx>abc.docx</a></li>
+<li><a href = /Media/Text/code.c>code.c</a></li>
+<li><a href = /Media/Text/university.txt>university.txt</a></li>
+</ul>
+</body></html>
+
+Request: 
+GET /Media/Text/university.txt HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/plain
+Content-Length: 4
+
+
+Request: 
+GET /Media/Text/code.c HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/plain
+Content-Length: 0
+Content-Disposition: attachment; filename="code.c"
+
+
+File downloaded successfully.
+Request: 
+GET /Media/Text/gh HTTP/1.1
+Response: 
+HTTP/1.0 404 Not Found
+Content-Type: text/html
+
+<!DOCTYPE html>
+<title>404 - Page Not Found</title></head>
+<body style="text-align:center;">
+<h1>404 - Page Not Found</h1>
+<p><a href="/">Go back to the homepage</a></p>
+</body></html>
+
+Page not found.
+Request: 
+UPLOAD a.jpg
+Response: 
+Receiving file: a.jpg (62833 bytes)
+File a.jpg uploaded successfully (62833 bytes).
+
+Request: 
+
+Request: 
+
+Request: 
+GET /uploaded/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /uploaded/a.jpg>a.jpg</a></li>
+</ul>
+</body></html>
+
+Request: 
+GET /uploaded/a.jpg HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: image/jpeg
+Content-Length: 62833
+
+
+Request: 
+UPLOAD b.jpg
+Response: 
+Receiving file: b.jpg (2458730 bytes)
+File b.jpg uploaded successfully (2458730 bytes).
+
+Request: 
+GET /uploaded/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /uploaded/a.jpg>a.jpg</a></li>
+<li><a href = /uploaded/b.jpg>b.jpg</a></li>
+</ul>
+</body></html>
+
+Request: 
+GET /uploaded/b.jpg HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: image/jpeg
+Content-Length: 2458730
+
+
+Request: 
+UPLOAD v.mkv
+Response: 
+Invalid format.
+Request: 
+
+Request: 
+GET /uploaded/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li>No files found.</li>
+</ul>
+</body></html>
+
+Request: 
+GET /uploaded/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li>No files found.</li>
+</ul>
+</body></html>
+
+Request: 
+UPLOAD a.jpg
+Response: 
+Receiving file: a.jpg (62833 bytes)
+File a.jpg uploaded successfully (62833 bytes).
+
+Request: 
+UPLOAD b.jpg
+Response: 
+Receiving file: b.jpg (2458730 bytes)
+File b.jpg uploaded successfully (2458730 bytes).
+
+Request: 
+GET /uploaded/ HTTP/1.1
+Response: 
+HTTP/1.0 200 OK
+Content-Type: text/html
+
+<html><head><title>File List</title></head><body>
+<h1>Files in Directory</h1>
+<ul>
+<li><a href = /uploaded/a.jpg>a.jpg</a></li>
+<li><a href = /uploaded/b.jpg>b.jpg</a></li>
+</ul>
+</body></html>
+
+Request: 
+UPLOAD v.mkv
+Response: 
+Invalid format.
+Request: 
+UPLOAD v.mkv
+Response: 
+Invalid format.
